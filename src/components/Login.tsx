@@ -8,8 +8,7 @@ const Login = () => {
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        console.log('USER INFO', username);
-        await login({ username, password})
+        await login('/api/v1/login', { username, password})
     }
 
     const h1Style = { textAlign: 'center', padding: '10px' } as any

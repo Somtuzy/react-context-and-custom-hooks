@@ -9,17 +9,16 @@ const useLoginUser = () => {
     const [isLoading, setIsLoading] = useState(false)
     const [error, setError] = useState("")
 
-    const login = async (data: TLoginDetails) => {
+    const login = async (url: string, data: TLoginDetails) => {
         try {
             setIsLoading(true)
-            const response = await axios.post('/gaggaa', data)
+            const response = await axios.post(url, data)
             localStorage.setItem('user', response.data.data)
             setIsLoading(false)
             alert('success')
         } catch (err: any) {
             setIsLoading(false)
-            console.log('LOGIN Failed:', data, err);
-            setError('login has failed o')
+            setError(err.response.data.message || 'There was an error logging in.')
         }
     }
 
