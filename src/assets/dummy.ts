@@ -1,0 +1,1 @@
+export default "https://deleoye.ng/wp-content/uploads/2016/11/Dummy-image.jpg"
