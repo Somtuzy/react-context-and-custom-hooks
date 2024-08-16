@@ -3,5 +3,470 @@
 @tailwind utilities; */
 
 body {
-    background-color: grey;
+    background-color: white;
+    /* font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-small; */
+    padding: 20px;
 }
+
+/* universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* all h1 elements */
+/* h1 {
+    text-align: center;
+    font-size: 20px;
+} */
+
+/* all p elements */
+/* p {
+    font-size: 20px;
+} */
+
+/* styling by id */
+/* #container {
+    padding: 20px;
+} */
+
+/* styling by class */
+/* .title {
+    font-size: 50px;
+    color: black
+} */
+
+/* .first {
+    width: 90%;
+    padding: 25px;
+    box-sizing: border-box;
+    margin-top: 150px;
+    background-image: url("test.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(120 120 255, 0);
+    border: 2px solid rgb(120 120 255);
+    background: rgba(0, 0, 0, 0.1);
+    opacity: 70%;
+} */
+
+/* .second {
+    height: 600px;
+    background-color: purple;
+    background-image: url("https://www.shutterstock.com/image-vector/sample-red-square-grunge-stamp-260nw-338250266.jpg");
+    background-repeat: no-repeat;
+   background-position: right top;
+   background-attachment: scroll;
+   margin-right: 200px;
+    margin: 20px 10%;
+    position: relative;
+    padding: 5px 5%;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(120 120 255, 0);
+    outline: thick solid pink;
+    outline-offset: 5px;
+    border: 20px solid hsl(0, 50%, 4%);
+    border-radius: 300px;
+    opacity: 35%;
+} */
+
+/* .first-body {
+    color: grey;
+    border: 3px solid red;
+    border-radius: 50px;
+    border-width: 3px 5px;
+    border-style: solid;
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+    border-color: red green blue yellow;
+} */
+
+/* .second-body {
+    color: brown;
+    position: absolute;
+} */
+
+/* .shared {
+    font-style: italic;
+    font-size: 25px;
+    padding: 10px;
+} */
+
+/* styling by specific type of element in a class */
+/* p.first {
+    color: brown;
+    border: 3px solid red;
+} */
+
+/* grouping selectors by applying a style on specified elements */
+/* h1,
+h2,
+p {
+    color: black
+}
+
+a {
+    font-size: 20px;
+} */
+
+/* unvisited link */
+/* a:link {
+    color: red;
+} */
+
+/* visited link */
+/* a:visited {
+    color: green;
+} */
+
+/* mouse over link */
+/* a:hover {
+    color: hotpink;
+} */
+
+/* selected link */
+/* a:active {
+    color: blue;
+}
+
+th,
+td {
+    border-bottom: 1px solid #ddd;
+} */
+
+/* table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    height: 30px;
+}
+
+td {
+    height: 15px;
+    text-align: center;
+} */
+
+/* td:hover {
+    background-color: yellow;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: #04AA6D;
+    color: white;
+} */
+
+/* .img {
+    position: relative;
+}
+
+.third {
+    position: relative;
+}
+
+.topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+} */
+
+/* .topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+} */
+
+/* .middle {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    text-align: justify;
+} */
+
+/* .bottomleft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+} */
+
+/* .bottomright {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+} */
+
+/* img {
+    opacity: 0.5;
+    width: 100%;
+    height: auto;
+} */
+
+/* .sample {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+} */
+
+/* .bio {
+    overflow: scroll;
+    overflow-wrap: break-word;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 250px;
+    font-size: medium;
+    background-color: blue;
+    float: left;
+} */
+
+/* .card{
+   width: 50%;
+   height: 600px;
+   margin-left: 25%;
+   margin-top: 200px;
+   text-align: center;
+   border: 5px solid black;
+} */
+
+/* .card-img {
+   width: 100%;
+   height: 80%;
+   margin-left: 25%;
+} */
+
+/* .card > h1 {
+   padding: 5px 20px;
+   color: brown;
+}
+
+.card p, h2 {
+   padding: 5px 20px;
+   color: purple;
+} */
+
+/* p {
+   color: red !important;
+} */
+
+/* .ex{
+   width: 100%;
+   height: 100px;
+   border: 3px solid purple;
+   background-color: blue;
+   padding-left: 10px;
+}
+
+.ex p {
+   color: white;
+   padding: 10px;
+   background-color: red;
+   margin: 10px 0;
+} */
+
+/* .rectangle {
+    background-color: blue;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    top: 200px;
+    left: 200px;
+} */
+
+/* .circle {
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+} */
+
+/* .circle img {
+    position: relative;
+    top: 0px;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+} */
+
+/* .card {
+    background-color: black;
+    margin-top: 20px;
+    margin-left: 10px;
+    position: relative;
+    width: 450px;
+    height: 450px;
+    border: 2px solid black;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+} */
+
+/* .card img {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+} */
+
+/* .text {
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   width: 100%;
+   color: rgb(166, 79, 48);
+   position: absolute;
+   bottom: 70px;
+} */
+
+/* .text h1 {
+   font-size: 30px;
+} */
+
+/* .text p {
+   font-size: 15px;
+} */
+
+/* .card2 {
+   background-color: rgb(143, 143, 223);
+   margin-top: 300px;
+   margin-left: 10px;
+   position: relative;
+   width: 450px;
+   height: 300px;
+   border: 2px solid black;
+   text-align: center;
+   display: inline-block;
+   border-top-left-radius: 10%;
+   border-top-right-radius: 10%;
+} */
+
+/* .card2 img {
+   position: absolute;
+   bottom: 75px;
+   left: 0px;
+   right: 0px;
+   width: 450px;
+   height: 450px;
+   border-radius: 50%;
+   border-top: 2px;
+   border-right: 0px;
+   border-left: 0px;
+   border-bottom: 0px;
+   border-style: solid;
+   border-color: black;
+   margin: 0;
+} */
+
+/* p{
+   margin: 0;
+} */
+
+/* .text2 {
+   height: 40px;
+   width: 50%;
+   background-color: black;
+   color: white;
+   margin-top: 232.5px;
+   padding-top: 10px;
+   margin-left: 25%;
+} */
+
+.flex {
+    color: blueviolet;
+    border: 5px solid pink;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.first {
+    background-color: red;
+    /* flex: 1; */
+}
+
+.second {
+    background-color: blue;
+    /* flex: 2; */
+}
+
+.third {
+    background-color: brown;
+    /* flex: 3; */
+}
+
+.flex > * {
+    flex-basis: 300px;
+}
+/* .gridy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 200px 200px;
+    gap: 2px;
+    width: 100%;
+}
+
+.gridy1 {
+    background: brown;
+    height: 100px;
+    grid-column: span 1;
+}
+
+.gridy2 {
+    background: purple;
+    height: 100px;
+    grid-column: span 3;
+} */
+
+.container {
+    width: 800px;
+    height: 400px;
+    margin-inline: auto;
+    border: 2px solid red;
+    /* display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center; */
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    /* flex-flow: row wrap; */
+    /* align-content: center; */
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr 3fr);
+}
+
+.box {
+    /* min-width: 100px; */
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 2px;
+    /* flex-basis: 100px;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex: 2 1 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+
+}
+
+/* .box:nth-child(2) {
+    flex: 1 2 150px;
+} */
